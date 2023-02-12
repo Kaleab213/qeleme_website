@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qeleme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <ul
+        class="nav justify-content-between d-none d-md-flex ps-5 pe-5 pt-4 pb-4 bg-dark"
+      >
+        <li class="nav-item">
+          <a class="navbar-brand text-light fs-2" href="#">Qeleme</a>
+        </li>
+        <li class="nav-item d-none d-md-inline">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success text-light" type="submit">
+              Search
+            </button>
+          </form>
+        </li>
+        <li class="nav-item d-none d-lg-inline">
+          <a class="nav-link text-light fs-3" href="contactUsboot.html"
+            >ContactUs</a
+          >
+        </li>
+        <li class="nav-item d-none d-lg-inline">
+          <a class="nav-link text-light fs-3" href="aboutUsboot.html"
+            >AboutUs</a
+          >
+        </li>
+      </ul>
+
+      <nav class="navbar navbar-expand-md navbar-light bg-dark">
+        <div class="container-xxl justify-content-between">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand d-md-none" href="#">
+            <span class="text-light fw-bold fs-2"> Qeleme </span>
+          </a>
+          <!-- toggle button for mobile nav -->
+          <button
+            class="navbar-toggler text-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-dark navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar links -->
+          <div
+            class="collapse navbar-collapse justify-content-end align-center text-light"
+            id="main-nav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item me-5">
+                <a class="nav-link text-light fs-3" href="indexboot.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-light fs-3"
+                  href="courseMaterialsboot.html"
+                  >Course Materials</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-light fs-3" href="examsboot.html"
+                  >Exams</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-light fs-3" href="studyTipsboot.html"
+                  >Study Tips</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-light fs-3" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fs-3 mb-5" href="signUpboot.html"
+                  >SignUp</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="fs-3">
+      <div>
+        <div class="text-center my-5">
+          <h1>Study Tips</h1>
+        </div>
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-md-6 img-fluid">
+              <picture>
+                <source type="image/jpg" srcset="images/studytip1.jpg" />
+                <img
+                  class="home__image img-fluid"
+                  src="images/studytip1.jpg"
+                  alt="A coffee next to a book"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <p class="card__body">
+                Active recall is the process of searching your brain to find an
+                answer. When compared with simply rereading a chapter or
+                rewatching a lecture over and over again, the challenge of
+                recalling an answer helps you ultimately remember the answer
+                better. Active recall triggers the “testing effect” — the theory
+                that when you retrieve information from memory, that information
+                holds better in your long-term memory.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid mt-5">
+          <div class="row align-items-center">
+            <div class="col-md-6 img-fluid">
+              <picture>
+                <source type="image/webp" srcset="images/studytip2.webp" />
+                <source type="image/jpg" srcset="images/studytip2.jpg" />
+                <img
+                  class="home__image img-fluid"
+                  src="images/studytip2.jpg"
+                  alt="A hand holding a pen to write on a book"
+                  width="100%"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <p class="card__body">
+                Spaced repetition is a method of reviewing material at
+                systematic intervals. At the beginning of the learning process,
+                the intervals are spaced closely together (for example, one
+                hour; four hours; one day). As the aterial is reviewed, the
+                intervals become systematically longer (four days; one week; two
+                weeks). An ideal system of spaced repetition allows you to
+                review the material before it is forgotten, helping you to
+                retain it in your long term memory.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid mt-5">
+          <div class="row align-items-center">
+            <div class="col-md-6 img-fluid">
+              <picture>
+                <source type="image/webp" srcset="images/studytips3.webp" />
+                <source type="image/jpg" srcset="images/studytips3.jpg" />
+                <img
+                  class="home__image img-fluid"
+                  src="images/studytips3.jpg"
+                  alt="A book next to a coffee and a leaf"
+                  width="100%"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <p class="card__body">
+                Practice testing, also known as retrieval practice, involves
+                studying a topic and then trying to recall the newly studied
+                material. For example, you can read a passage or watch a lecture
+                and then try to recall as much as you can. Or, you can read an
+                article followed by a practice quiz. Practice testing is a
+                highly effective learning strategy. you can improve your
+                learning by using frequent, low stakes practice quizzes or
+                assignments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th>Passive Studying Methods</th>
+              <th>Active Studying Methods</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Flashcards</td>
+              <td>Explain material in your own words, speak it aloud</td>
+            </tr>
+            <tr>
+              <td>Rewriting notes</td>
+              <td>Formulate and write down questions as you read</td>
+            </tr>
+            <tr>
+              <td>Reread chapter summary & outline</td>
+              <td>
+                Answer practice questions and seek to do additional practice
+                questions/problems
+              </td>
+            </tr>
+            <tr>
+              <td>Memorize theories</td>
+              <td>
+                Relate theories to real life examples, interests or stories
+              </td>
+            </tr>
+            <tr>
+              <td>Reread textbook</td>
+              <td>Develop a concept map or flow chart to organize material</td>
+            </tr>
+            <tr>
+              <td>Highlight material</td>
+              <td>
+                Break diagrams down into smaller parts to explain how each part
+                of the process works together
+              </td>
+            </tr>
+            <tr>
+              <td>Review highlighted material</td>
+              <td>Participate in group discussions and group study sessions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container-fluid">
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <p>
+              How To Study effectively using active studying methods.Listen this
+              audio to understand the secret of top scorers.
+            </p>
+            <a href="files/english_subtitle.pdf" class="view__link"
+              >audio transcription</a
+            >
+          </div>
+          <div class="col-md-6">
+            <audio src="audios/YouCut.mp3" controls></audio>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-light bg-black pt-5 pb-5">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-4">
+            <h2>
+              <a class="text-light" href="contactUsboot.html">Contact us</a>
+            </h2>
+            <h2 class="fs-3">kaleabtibebu400@gmail.com</h2>
+            <h2 class="fs-3">+251901711106</h2>
+          </div>
+          <div class="col-lg-4">
+            <h2>
+              <a class="text-light" href="aboutUsboot.html">About us</a>
+            </h2>
+          </div>
+          <div class="col-lg-4">
+            <h2>Social Media</h2>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  class="text-light fs-3"
+                  href="https://www.facebook.com/birukie.anelay/photos_by"
+                  >facebook</a
+                >
+              </li>
+              <li>
+                <a class="text-light fs-3" href="https://t.me/+68lPQEF5pStjZDA0"
+                  >Telegram</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-light fs-3"
+                  href="https://www.youtube.com/results?search_query=organic+chemistry"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5 mb-5">
+        <h2 class="footer__copyright fs-3">Copyright 2023 Kaleab Tibebu</h2>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
