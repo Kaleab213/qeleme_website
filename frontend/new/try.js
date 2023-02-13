@@ -2,8 +2,8 @@ const container = document.getElementById("set")
 
 Collection= [
     {title: "Biology", description: "This slides show brief information about",pdf:"files/CH_5.pdf", grade:"10", id:"1", comments:[{content:"aaaaaaaaaaaaaaaa",userName:"fas"},{content:"bbbbbbbbbbbbbbb",userName:"eny"},{content:"ccccccccccccccccc",userName:"kal"}]},
-    {title: "Chemistry", description: "This slides show brief information about", pdf:"files/CH_4.pdf", grade:"11" , id:"2"},
-    {title: "Civics", description: "This slides show brief information about", pdf:"files/CH_6.pdf", grade:"9" , id:"3"}]
+    {title: "Chemistry", description: "This slides show brief information about", pdf:"files/CH_5.pdf", grade:"11" , id:"2"},
+    {title: "Civics", description: "This slides show brief information about", grade:"9" , id:"3"}]
 
     for(let list of Collection)
     {    id = list.id
@@ -45,7 +45,9 @@ function fetchComment(id,card){
         if (tutor.id === id){
             comment = document.createElement("div")
             comment.classList.add("m-5")
+            commento = document.createElement("input")
             for(comme of tutor.comments){
+
                 part = document.createElement("div")
                 part.classList.add("card")
                 part.classList.add("m-3")
@@ -57,13 +59,28 @@ function fetchComment(id,card){
                 part.append(names)
                 part.append(cont)
                 comment.append(part)
+                commento = document.createElement("input")    
+                commento.setAttribute('type', 'text')
+                commento.append(comment)
+            /* commento.setAttribute('placeholder', 'Enter your comment')
+            card.append(commento)
+            butto = document.createElement("button")
+            butto.innerHTML = "Post"
+            card.append(butto) */
+            /* butto.classList.add("btn")
+            butto.classList.add("btn-primary")
+            butto.classList.add("w-25")
+            butt.onclick = (function(){ return function() {
+                update()
+             };})(); */
+            
                 
             }
+        }
+            
+
             card.append(comment);
             break
         }
     }
-}
-span.onclick = function () {
-    modal.style.display = "none";
-  };
+

@@ -26,8 +26,15 @@ export class TutorialController {
   constructor(
     private tutorialService: TutorialService) {}
 
+ @UseGuards(AtGuards)
+  @Get('private')
+  getTutorial(@UserDecoratorId('id') userId: number) {
+    return this.tutorialService.getTutorial(
+      userId,
+    );
+  }
   @Get()
-  getTutorial(@UserDecoratorId() userId: number) {
+  getTutorialAll(@UserDecoratorId() userId: number) {
     return this.tutorialService.getTutorial(
       userId,
     );

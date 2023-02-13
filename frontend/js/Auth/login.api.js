@@ -1,14 +1,15 @@
-//import _ from 'lodash';
+// import _ from 'lodash';
 const login =document.getElementById('login');
-
-// export { _token as token };
-    
+export const Token =localStorage.getItem('access_token');
 
 
 
 
 
-login.addEventListener('submit', function(e){e.preventDefault();
+
+
+if (login) {
+    login.addEventListener('submit', function(e){e.preventDefault();
     const username= document.getElementById('username').value;
     const password= document.getElementById('password').value;
     fetch('http://localhost:3000/auth/signin',{
@@ -22,29 +23,22 @@ login.addEventListener('submit', function(e){e.preventDefault();
             "Content-Type": "application/json",
         }
     }).then(response =>response.json()).then(data=>{
-        token = data.access_token;
+        
+        localStorage.setItem('access_token',data.access_token);
+        console.log(data.access_token);
+        console.log(localStorage);
+
         
         
 if(data.error){ alert("username and password incorrect")}
 else{
-    window.open('indexboot.html');
+    window.open('post.html');
 }
 
-    }).catch(error => console.error("Error: " + data.message));
+    }).catch(error => console.error("Error: " + error.message));
 
-    
-
-
+    })};
 
 
-
-
-
-
-
-
-
-});
-// export default{data}
-
+ 
 
